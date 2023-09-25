@@ -1,0 +1,341 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    width: 100%;
+    color: white;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+/* Estilo para el enlace "La ruta del sabor" */
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo al pasar el mouse sobre el enlace "La ruta del sabor" */
+header h1 a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+/* Imagen de cada receta */
+main img{
+    max-width: 65%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+    .toggle-button {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 35px;
+        color: #ffffff;
+        background-color: transparent;
+        padding: 10px;
+        border-radius: none;
+        cursor: pointer;
+    }
+
+    .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container{
+    margin: 0px;
+    display: flex;
+    }
+
+    .nav-item:hover {
+        margin-right: 10px;
+    }
+
+    nav {
+        display: none;
+        background-color: #333;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav.show-nav {
+        display: block;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-box-img,
+    .footer-box-links,
+    .footer-box-info {
+        width: 100%;
+        margin: 10px 0;
+        margin-right: 60px;
+    }
+
+    .footer-box-links {
+        text-align: center;
+        margin-right: 235px;
+    }
+
+    .footer-box-info{
+        width: 100%;
+    }
+
+    .footer-box-somos p {
+        margin: 0px;
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* Estilos específicos para la versión de escritorio */
+@media (min-width: 769px) {
+    .toggle-button {
+    display: none;
+    }
+
+    .nav-item::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background-color: transparent; 
+        transition: width 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgba(128, 128, 128, 0.4);
+        box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.5);
+    }
+    
+    .nav-item:hover::after {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    nav {
+        margin-right: 20px 0; 
+        display: block;
+        text-align: right;
+    }
+
+    .col-md-4.with-margin:last-child {
+        margin-right: 0;
+    }
+
+    col-md-4.with-margin {
+        margin-right: 20px;
+    }
+
+    .col-md-4.with-margin:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    #footer{
+    flex-wrap: wrap;
+    }
+
+    .footer-box-somos p {
+        margin: 25px;
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.nav-item {
+    margin: 0;
+    padding: 0;
+    transition: relative;
+}
+
+main {
+    margin: 20px;
+}
+
+/* Estilos específicos para la página de receta1 */
+h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+/*Footer en general*/
+#footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Imagen la ruta del sabor*/
+.footer-box-img {
+    width: 300px;
+    flex-grow: 0;
+    max-width: 350px;
+    margin-left: 50px;
+}
+
+.footer-box-img img {
+    width: 100%;
+    border: none;
+}
+
+.footer-box-img ul li::marker {
+    content: none;
+}
+
+/*Footer de links*/
+.footer-box-links{
+    width: 20%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-left: 270px;
+}
+
+.footer-box-links h3{
+    color: rgb(158, 160, 160);
+}
+
+.footer-box-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-box-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-box-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-box-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/*Footer de info*/
+.footer-box-info {
+    width: 35%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.footer-box-info-redes ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: 85px;
+    justify-content: center;
+}
+
+.footer-box-info-redes ul li {
+    margin-right: 20px;
+}
+
+.footer-box-info-redes ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-box-info-redes ul li a img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+/*Footer de somos*/
+.footer-box-somos {
+    width: 70%;
+    text-align: center; 
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 0.8em;
+}
+
+.footer-box-somos h3 {
+    font-size: 1.5em;
+    color: rgb(158, 160, 160);
+}

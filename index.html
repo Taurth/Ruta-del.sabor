@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/style-index.css">
+  <title>La ruta del sabor</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="title"><a href="index.html">La ruta del sabor</a></h1>
+      <button id="hamburguesa" class="toggle-button">&#9776;</button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+          <li><a href="pages/todas-recetas.html">Todas las Recetas</a></li>
+          <li><a href="pages/recetas-rapidas.html">Recetas Rapidas</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <section class="presentacion">
+      <img src="images/imagen-presentacion.png" alt="Imagen de Presentación">
+      <h2>¡Bienvenido a nuestra página de recetas de todo tipo!</h2>
+      <p>Descubre un mundo de sabores y aromas a través de nuestras variadas recetas. Desde platos tradicionales hasta nuevas creaciones culinarias, aquí encontrarás inspiración para deleitar a tu paladar y sorprender a tus seres queridos.
+        Nuestro objetivo es brindarte recetas fáciles de seguir, llenas de sabor y que te motiven a experimentar en la cocina. Ya seas un chef experimentado o estés dando tus primeros pasos en la cocina, tenemos algo especial para ti.
+        Explora nuestras secciones de recetas clasificadas por tipo de comida, nivel de dificultad o ingredientes. Desde exquisitas ensaladas hasta postres irresistibles, estamos seguros de que encontrarás algo que te entusiasme.
+        ¡No dudes en sumergirte en nuestro mundo culinario y empezar tu aventura gastronómica! Siéntete libre de compartir tus experiencias, hacer preguntas o sugerir tus propias recetas. ¡Juntos haremos de la cocina un lugar aún más delicioso!
+        ¡Buen provecho y feliz cocinar!
+      </p>
+    </section>
+
+    <section class="categorias">
+      <div class="container">
+        <h2>Categorías de Recetas</h2>
+        <select id="categoria-select" class="form-select">
+          <option value="todas">Todas las Categorías</option>
+          <option value="platos-principales">Platos Principales</option>
+          <option value="postres">Postres</option>
+          <option value="platos-rapidos">Platos Rapidos</option>
+        </select>
+      </div>
+    </section>
+  
+    <section class="recetas">
+      <div class="container">
+        <h2>Recetas disponibles</h2>
+        <div class="row">
+          <!-- Carta 1 -->
+          <div class="col-md-4 with-margin">
+            <a href="recetas/receta1.html" class="card-link">
+              <div class="card" data-categoria="platos-principales">
+                <img src="images/pollo-asiatico-by-naturitas_version_1689144811.jpg" class="card-img-top" alt="Imagen Receta 1">
+                <div class="card-body">
+                  <h5 class="card-title">Pollo Asiático</h5>
+                  <p class="card-text">Esta receta de pollo con sésamo es muy fácil de preparar. El sésamo le da un sabor tostado y crujiente al pollo, mientras que la marinada de salsa de soja y miel agrega un toque dulce y salado</p>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+          <!-- Carta 2 -->
+          <div class="col-md-4 with-margin">
+            <a href="recetas/receta2.html" class="card-link">
+              <div class="card" data-categoria="postres">
+                <img src="images/galletas-de-limon.jpg" class="card-img-top" alt="Imagen Receta 1">
+                <div class="card-body">
+                  <h5 class="card-title">Galletas de Limón</h5>
+                  <p class="card-text">¡Que levante la mano al que le gusta el limón! Lo sabíamos, ¡te chifla! No dejes escapar estas galletas deliciosas con un increíble sabor cítrico.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Carta 3 -->
+          <div class="col-md-4 with-margin">
+            <a href="recetas/receta3.html" class="card-link">
+              <div class="card" data-categoria="platos-rapidos">
+                <img src="images/quesadillas-de-lentejas-con-champinones.jpg" class="card-img-top" alt="Imagen Receta 1">
+                <div class="card-body">
+                  <h5 class="card-title">Quesadillas de Lentejas</h5>
+                  <p class="card-text">Si todavía nos has comido suficientes legumbres esta semana, toma nota de estas quesadillas rellenas de lentejas. Sabrosas, nutritivas, una manera distinta y divertida de preparar lentejas.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Carta 4 -->
+          <div class="col-md-4 with-margin">
+            <a href="recetas/receta4.html" class="card-link">
+              <div class="card" data-categoria="postres">
+                <img src="images/mugcake-de-avena-y-vainilla_version_1683712286.jpg" class="card-img-top" alt="Imagen Receta 1">
+                <div class="card-body">
+                  <h5 class="card-title">Mugcake de Avena y Vainilla</h5>
+                  <p class="card-text">¿Sueles emplear el microondas para cocinar? Con esta receta vas a descubrir la maravilla que se puede cocinar con él. Prueba este mugcake de avena y vainilla y ¡compruébalo!</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Carta 5 -->
+          <div class="col-md-4 with-margin">
+            <a href="recetas/receta5.html" class="card-link">
+              <div class="card" data-categoria="platos-principales">
+                <img src="images/noquis-estilo-sorrentina_version_1683864040.jpg" class="card-img-top" alt="Imagen Receta 1">
+                <div class="card-body">
+                  <h5 class="card-title">Ñoquis estilo Sorrentina</h5>
+                  <p class="card-text">Te traemos una receta exageradamente sabrosa. Están tan ricos los ñoquis así cocinados que tienes que cocinarlos. Los ingredientes son pocos y muy sencillos de encontrar. ¡Verás qué comida tan rica te preparas!</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Carta 6 -->
+          <div class="col-md-4 with-margin">
+            <a href="recetas/receta6.html" class="card-link">
+              <div class="card" data-categoria="platos-rapidos">
+                <img src="images/sandwich-super-sabroso-de-garbanzos-y-brocoli_version_1678939228.jpg" class="card-img-top" alt="Imagen Receta 1">
+                <div class="card-body">
+                  <h5 class="card-title">Sándwich de Garbanzos y Brócoli</h5>
+                  <p class="card-text">¿Te apetece un sándwich vegetal distinto a los que hasta ahora has podido prepararte? Mira qué pinta tan increíble tiene y la de ingredientes ricos que lleva.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Carta 7 -->
+          <div class="col-md-4 with-margin">
+            <a href="recetas/receta7.html" class="card-link">
+              <div class="card" data-categoria="postres">
+                <img src="images/porridge-de-zanahoria_version_1683691233.jpg" class="card-img-top" alt="Imagen Receta 1">
+                <div class="card-body">
+                  <h5 class="card-title">Gachas De Zanahoria</h5>
+                  <p class="card-text">Si quieres disfrutar de un desayuno caliente, saciante y fácil de preparar, ¡no te pierdas esta papilla de zanahoria llena de nutrientes y sabor!</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Carta 8 -->
+          <div class="col-md-4 with-margin">
+            <a href="recetas/receta1.html" class="card-link">
+              <div class="card" data-categoria="platos-principales">
+                <img src="images/burger-de-garbanzos_version_1651746753.jpg" class="card-img-top" alt="Imagen Receta 1">
+                <div class="card-body">
+                  <h5 class="card-title">Burger de Garbanzos</h5>
+                  <p class="card-text">¿Te apetece plan de hamburguesas? Pues estás de suerte porque las que te traemos hoy son... ¡espectaculares! ¡Ah! Se nos olvidaba, no son de carne sino de garbanzos, mejor aún, ¿verdad?</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Carta 9 -->
+          <div class="col-md-4 with-margin">
+            <a href="recetas/receta1.html" class="card-link">
+              <div class="card" data-categoria="platos-rapidos">
+                <img src="images/salmon-cremoso-con-champinones_version_1677747081.jpg" class="card-img-top" alt="Imagen Receta 1">
+                <div class="card-body">
+                  <h5 class="card-title">Salmón Cremoso con Champiñones</h5>
+                  <p class="card-text">¿Preparado para cocinar salmón con una salsa exquisita? Champiñones salteados con cebolla, aromatizado todo con jugo de naranja y jengibre, y bañado en leche de coco hace de este salmón una receta ¡única!</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-box-img">
+        <ul>
+          <li><a href="index.html"><img src="images/la-ruta-del-sabor.png" alt="Inicio"></a></li>
+        </ul>
+      </div>
+      <div class="footer-box-links">
+          <h3>Accesos Rápidos</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+            <li><a href="pages/todas-recetas.html">Todas las Recetas</a></li>
+            <li><a href="pages/recetas-rapidas.html">Recetas Rapidas</a></li>
+          </ul>
+      </div>
+      <div class="footer-box-info">
+        <div class="footer-box-info-redes">
+          <ul>
+            <li><a href="https://github.com/"><img src="icons/github.png" alt="Github"></a></li>
+            <li><a href="https://co.linkedin.com/"><img src="icons/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.youtube.com/"><img src="icons/youtube.png" alt="Youtube"></a></li>
+            <li><a href="https://twitter.com/home"><img src="icons/twitter.png" alt="X"></a></li>
+          </ul>
+        </div>
+        <div class="footer-box-somos">
+          <h3>Somos...</h3>
+          <p>Es nuestro rincón culinario virtual, te invitamos a explorar un universo infinito de sabores y texturas. Desde platos reconfortantes hasta innovadoras delicias, encontrarás inspiración en cada receta. Nuestro objetivo es que te conviertas en un chef casero extraordinario, transformando simples ingredientes en obras maestras gastronómicas. Descubre la magia de cocinar, comparte momentos inolvidables alrededor de la mesa y deja que la pasión por la cocina transforme tu vida diaria. Bienvenido a un viaje culinario que estimulará todos tus sentidos. ¡Tu próxima gran comida comienza aquí!</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascript/filtrar-recetas.js"></script>
+    <script src="javascript/hamburguesa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+  </body>
+</html>
