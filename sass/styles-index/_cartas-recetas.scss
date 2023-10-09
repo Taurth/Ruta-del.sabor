@@ -1,0 +1,40 @@
+/* Cartas en general */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-md-4 {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.col-md-4.with-margin {
+    margin-right: 20px;
+}
+
+.with-margin {
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-style: italic;
+    color: rgb(99, 99, 99);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Estilos específicos para la página de inicio */
+.categorias,
+.recetas {
+    margin: 20px;
+}
+
+.categorias h2,
+.recetas h2 {
+    margin-bottom: 10px;
+}

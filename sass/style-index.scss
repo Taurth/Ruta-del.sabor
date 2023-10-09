@@ -1,0 +1,16 @@
+/*Import BODY*/
+@import "styles-generales/body";
+
+/*Import PRESENTACIÓN*/
+@import "styles-index/presentacion";
+
+/*Import GENERALES*/
+@import "styles-generales/nav";
+@import "styles-generales/footer";
+
+/*Import CARTAS Y RECETAS*/
+@import "styles-index/cartas-recetas";
+
+/*Import LOS MEDIA ESPECIFICOS*/
+@import "styles-generales/media-escritorio";
+@import "styles-generales/media-movil";

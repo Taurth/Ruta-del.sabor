@@ -1,0 +1,60 @@
+/*Estilos header general*/
+header {
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+/* Estilo para el enlace "La ruta del sabor" */
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo al pasar el mouse sobre el enlace "La ruta del sabor" */
+header h1 a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+
+
+/*Nav general*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.nav-item {
+    margin: 0;
+    padding: 0;
+    transition: relative;
+}
+
+main {
+    margin: 20px;
+}
