@@ -67,11 +67,40 @@ main {
   margin: 20px;
 }
 
-/* Imagen de cada receta */
-main img {
-  max-width: 65%;
+.blog-section {
+  background-color: #fff;
+  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: auto; /* Márgenes externos para separar de otros elementos */
+  text-align: center;
+}
+.blog-section h1 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.blog-section img {
+  max-width: 45%;
   height: auto;
-  margin-bottom: 10px;
+  display: block;
+  margin: 10px auto;
+}
+.blog-section .p1 {
+  font-size: 27px; /* Tamaño del texto más grande */
+  font-weight: bold; /* Texto en negrita */
+  margin-bottom: 15px;
+}
+.blog-section .p2 {
+  font-size: 27px; /* Tamaño del texto más grande */
+  font-weight: bold; /* Texto en negrita */
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.blog-section p {
+  font-size: 17px;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 /*Footer en general*/
@@ -309,4 +338,4 @@ main img {
   }
 }
 
-/*# sourceMappingURL=style-recetas.css.map */
+/*# sourceMappingURL=style-historia.css.map */
