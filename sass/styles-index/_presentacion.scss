@@ -1,7 +1,12 @@
 /* Estilos para la sección de presentación */
 .presentacion {
+    color: #ffbb00c2;
     text-align: center;
-    margin: 20px;
+    margin: 38px;
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 .presentacion img {
@@ -12,7 +17,8 @@
 
 .presentacion p {
     margin: 30px;
-    margin-inline: 80px;
+    margin-left: 150px;
+    margin-right: 150px;
     font-style: italic;
-    color: #6b6b6b;
+    color: #ffffff;
 }

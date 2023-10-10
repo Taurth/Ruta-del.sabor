@@ -2,6 +2,7 @@
 @import "styles-generales/body";
 
 /*Import GENERALES*/
+@import "styles-recetas/general-recetas";
 @import "styles-generales/nav";
 @import "styles-recetas/img-receta";
 @import "styles-generales/footer";
@@ -9,3 +10,5 @@
 /*Import LOS MEDIA ESPECIFICOS*/
 @import "styles-generales/media-escritorio";
 @import "styles-generales/media-movil";
+
+@import "animacion";

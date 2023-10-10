@@ -1,8 +1,10 @@
 /*Estilos header general*/
 header {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.2);
     color: white;
     width: 100%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
 }
 
 header ul li{
@@ -11,13 +13,14 @@ header ul li{
 
 /* Estilo para el enlace "La ruta del sabor" */
 header h1 a {
-    color: white;
+    font-family: 'Bungee Spice', cursive;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
 /* Estilo al pasar el mouse sobre el enlace "La ruta del sabor" */
 header h1 a:hover {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -26,8 +29,13 @@ header h1 a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 35px 20px;
-}
 
+    h2 {
+        color: #ffbb00c2;
+        margin-right: 85px;
+    }
+
+}
 
 
 /*Nav general*/
@@ -43,7 +51,7 @@ nav ul li {
 }
 
 nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0;
     padding: 5px;

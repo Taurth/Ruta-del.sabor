@@ -2,6 +2,7 @@
 .row {
     display: flex;
     justify-content: space-between;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
 }
 
 .col-md-4 {
@@ -15,6 +16,13 @@
 
 .with-margin {
     margin-bottom: 20px;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s ease;
 }
 
 .card-text {
@@ -28,6 +36,24 @@
 }
 
 
+.card:hover {
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+.card.active {
+    animation: zoomIn 0.5s ease forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
 /* Estilos específicos para la página de inicio */
 .categorias,
 .recetas {
@@ -38,3 +64,26 @@
 .recetas h2 {
     margin-bottom: 10px;
 }
+
+/* Estilo para el select de categorías */
+.categorias #categoria-select {
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black; 
+}
+
+.categorias #categoria-select::after {
+    content: '\25BC'; /* Unicode para la flecha abajo (puedes cambiarla según tu preferencia) */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Estilo para los options dentro del select */
+.categorias #categoria-select option {
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo de los options transparente/difuminado */
+    color: rgb(0, 0, 0); /* Color del texto de los options */
+}
+

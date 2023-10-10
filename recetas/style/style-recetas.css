@@ -5,14 +5,29 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /*Import GENERALES*/
+h2 {
+  color: rgba(255, 187, 0, 0.7607843137);
+}
+
+ul {
+  color: rgb(255, 255, 255);
+}
+
+ol {
+  color: rgb(255, 255, 255);
+}
+
 /*Estilos header general*/
 header {
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.2);
   color: white;
   width: 100%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
 }
 
 header ul li {
@@ -21,13 +36,14 @@ header ul li {
 
 /* Estilo para el enlace "La ruta del sabor" */
 header h1 a {
-  color: white;
+  font-family: "Bungee Spice", cursive;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
 
 /* Estilo al pasar el mouse sobre el enlace "La ruta del sabor" */
 header h1 a:hover {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -36,6 +52,10 @@ header h1 a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 35px 20px;
+}
+.container h2 {
+  color: rgba(255, 187, 0, 0.7607843137);
+  margin-right: 85px;
 }
 
 /*Nav general*/
@@ -51,7 +71,7 @@ nav ul li {
 }
 
 nav a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   margin: 0;
   padding: 5px;
@@ -75,16 +95,27 @@ main img {
 }
 
 /*Footer en general*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Estilo para el contenido principal (excluyendo el footer) */
+main {
+  flex: 1;
+}
+
 #footer {
-  margin-top: auto;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.2);
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
 }
 
 /*Imagen la ruta del sabor*/
@@ -118,7 +149,7 @@ main img {
 }
 
 .footer-box-links h3 {
-  color: rgb(158, 160, 160);
+  color: rgba(255, 187, 0, 0.7607843137);
 }
 
 .footer-box-links ul {
@@ -185,7 +216,7 @@ main img {
 
 .footer-box-somos h3 {
   font-size: 1.5em;
-  color: rgb(158, 160, 160);
+  color: rgba(255, 187, 0, 0.7607843137);
 }
 
 /*Import LOS MEDIA ESPECIFICOS*/
@@ -307,6 +338,100 @@ main img {
     margin: 0px;
     color: rgb(255, 255, 255);
   }
+}
+body {
+  background: #000000;
+}
+
+@keyframes loop {
+  0% {
+    transform: translate3D(0%, 51%, 0) rotate(0deg);
+  }
+  5% {
+    transform: translate3D(8%, 31%, 0) rotate(18deg);
+  }
+  10% {
+    transform: translate3D(22%, 13%, 0) rotate(36deg);
+  }
+  15% {
+    transform: translate3D(40%, 2%, 0) rotate(54deg);
+  }
+  20% {
+    transform: translate3D(46%, 21%, 0) rotate(72deg);
+  }
+  25% {
+    transform: translate3D(50%, 47%, 0) rotate(90deg);
+  }
+  30% {
+    transform: translate3D(53%, 80%, 0) rotate(108deg);
+  }
+  35% {
+    transform: translate3D(59%, 98%, 0) rotate(125deg);
+  }
+  40% {
+    transform: translate3D(84%, 89%, 0) rotate(144deg);
+  }
+  45% {
+    transform: translate3D(92%, 68%, 0) rotate(162deg);
+  }
+  50% {
+    transform: translate3D(99%, 47%, 0) rotate(180deg);
+  }
+  55% {
+    transform: translate3D(97%, 21%, 0) rotate(198deg);
+  }
+  60% {
+    transform: translate3D(80%, 7%, 0) rotate(216deg);
+  }
+  65% {
+    transform: translate3D(68%, 25%, 0) rotate(234deg);
+  }
+  70% {
+    transform: translate3D(59%, 41%, 0) rotate(251deg);
+  }
+  75% {
+    transform: translate3D(50%, 63%, 0) rotate(270deg);
+  }
+  80% {
+    transform: translate3D(38%, 78%, 0) rotate(288deg);
+  }
+  85% {
+    transform: translate3D(21%, 92%, 0) rotate(306deg);
+  }
+  90% {
+    transform: translate3D(3%, 79%, 0) rotate(324deg);
+  }
+  100% {
+    transform: translate3D(0%, 51%, 0) rotate(360deg);
+  }
+}
+.glow-container {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.glow-container .ball {
+  pointer-events: none;
+  --delay: 0s;
+  --size: 0.4;
+  --speed: 20s;
+  filter: blur(10px);
+  aspect-ratio: 1;
+  width: calc(150% * var(--size));
+  background: linear-gradient(259.53deg, #0a3fff 6.53%, #f55f0a 95.34%);
+  filter: blur(10vw);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loop var(--speed) infinite linear;
+  animation-delay: var(--delay);
+  transform-origin: 50% 50%;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style-recetas.css.map */
