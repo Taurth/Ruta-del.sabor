@@ -18,11 +18,6 @@ header h1 a {
     text-decoration: none;
 }
 
-/* Estilo al pasar el mouse sobre el enlace "La ruta del sabor" */
-header h1 a:hover {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
 
 .container {
     display: flex;
@@ -51,10 +46,11 @@ nav ul li {
 }
 
 nav a {
+    padding: 5px 5px;
+    transition: background-color 0.8s ease;
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0;
-    padding: 5px;
 }
 
 .nav-item {

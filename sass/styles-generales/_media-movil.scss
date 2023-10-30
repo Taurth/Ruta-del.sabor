@@ -7,10 +7,9 @@
         right: 20px;
         font-size: 35px;
         color: #ffffff;
-        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0);
         padding: 10px;
-        border-radius: none;
-        cursor: pointer;
+        border-radius: 0;
     }
 
     .col-md-4 {
@@ -40,7 +39,10 @@
 
     nav.show-nav {
         display: block;
+        background-color: rgba(0, 0, 0, 0.404);
     }
+
+
 
     nav ul {
         list-style: none;
@@ -51,11 +53,21 @@
         margin-bottom: 10px;
     }
 
+
     nav a {
+        text-align: center;
         text-decoration: none;
         color: white;
         display: block;
+        transition: background-color 0.8s ease; /* Añadir la transición aquí */
+        background-color: transparent; /* Establecer un color de fondo inicial */
     }
+
+    nav a:hover {
+        background-color: rgba(56, 56, 56, 0.377); /* Cambiar el color de fondo al pasar el ratón */
+        color: #ffffff;
+    }
+    
 
     #footer {
         flex-direction: column;
@@ -67,12 +79,12 @@
     .footer-box-info {
         width: 100%;
         margin: 10px 0;
-        margin-right: 60px;
+        margin-right: 75px;
     }
 
     .footer-box-links {
         text-align: center;
-        margin-right: 235px;
+        margin-left: 75px;
     }
 
     .footer-box-info{

@@ -1,8 +1,8 @@
 /* Cartas en general */
 .row {
+    justify-content: center;
     display: flex;
-    justify-content: space-between;
-    transition: box-shadow 0.5s ease, transform 0.5s ease;
+
 }
 
 .col-md-4 {
@@ -16,18 +16,21 @@
 
 .with-margin {
     margin-bottom: 20px;
-    transition: box-shadow 0.5s ease, transform 0.5s ease;
-
 }
 
 .card {
+    background-color: rgba(97, 97, 97, 0.527);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.8s ease, transform 0.8s ease;
+}
+
+.card-title{
+    color: rgb(221, 151, 0);
 }
 
 .card-text {
     font-style: italic;
-    color: rgb(99, 99, 99);
+    color: rgba(255, 255, 255, 0.623);
 }
 
 .card-link {
@@ -39,17 +42,18 @@
 .card:hover {
     box-shadow: 0 0 20px rgb(255, 255, 255);
     transform: scale(1.05);
+    transition: box-shadow 0.8s ease, transform 0.8s ease;
 }
 
 .card.active {
-    animation: zoomIn 0.5s ease forwards;
+    animation: zoomIn 0.8s ease forwards;
 }
 
 @keyframes zoomIn {
-    0% {
-        transform: scale(1.05);
+    from {
+        transform: scale(1);
     }
-    100% {
+    to {
         transform: scale(1.05);
     }
 }
